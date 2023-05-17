@@ -1,0 +1,109 @@
+.main-block {
+    position: relative;
+    padding: 190px 0px 40px 0px;
+    &__container {
+    }
+    &__body {
+        margin: 0px 0px 122px 0px;
+        position: relative;
+        z-index: 2;
+        max-width: 535px;
+    }
+    &__body > *:not(:last-child) {/* обращение ко всем обьектам первого уровня, кроме последнего */
+        margin: 0px 0px 30px 0px;
+    }
+    &__title {
+        font-family: 'Libre Baskerville';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 116%;
+        letter-spacing: 1.2px;
+        color: #FFFFFF;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 154%;
+        color: #FFFFFF;
+    }
+    &__buttons {
+        display: inline-flex;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 54px;
+        padding: 5px 33px;
+        transition: all 0.4s ease 0s;
+        font-size: 13px;
+        line-height: 154%;
+        letter-spacing: 0.02px;
+        color: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 80px;
+    }
+    &__button:hover {
+        text-decoration: underline;
+        color: #9F6B08;
+    }
+    &__bottom {
+        position: relative;
+        z-index: 2;
+    }
+    &__descr {
+        font-size: 15px;
+        line-height: 160%;
+        margin: 0px 0px 33px 0px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        padding: 5px 5px;
+        font-size: 15px;
+        line-height: 160%;
+    }
+    &__item::after {
+        content: '';
+        position: absolute;
+        width: 165px;
+        height: 1px;
+        left: 0;
+        top: -17px;
+        background: rgba(255, 255, 255, 1);
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &__image img {
+        /* object-position: bottom; */
+    }
+}
+@media (max-width: 660px) {
+    .main-block {
+        &__title {
+            font-size: 30px;
+        }
+        &__item::after {
+            display: none;
+        }
+        &__buttons {
+            display: block;
+        }
+        &__button {
+            max-width: 100%;
+        }
+    }
+}
+

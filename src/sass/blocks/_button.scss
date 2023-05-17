@@ -1,0 +1,24 @@
+.buttons {
+    display: inline-flex;
+}  
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 54px;
+    padding: 5px 33px;
+    transition: all 0.4s ease 0s;
+    font-size: 13px;
+    line-height: 154%;
+    letter-spacing: 0.02px;
+    border-radius: 80px;
+}
+.button:hover {
+    text-decoration: underline;
+    color: #9F6B08;
+    transform: scale(1.10);
+}
+@media (max-width: 1200px) {}
+@media (max-width: 1200px) {}
+@media (max-width: 1200px) {}

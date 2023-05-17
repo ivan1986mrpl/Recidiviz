@@ -1,0 +1,59 @@
+.forest {
+    position: relative;
+    background: #001414;
+    padding: 245px 0px 245px 0px;
+    &__bcg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 287px;
+        background-image: url('../img/forest/IMAGE1.jpg');
+    }
+    &__bcg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 287px;
+        background-image: url('../img/forest/IMAGE2.jpg');
+    }
+    &__container {
+    }
+    &__body > *:not(:last-child) {
+        margin: 0px 0px 21px 0px;
+    }
+    &__body {
+        position: relative;
+        z-index: 2;
+        max-width: 542px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 22px;
+        line-height: 100%;
+        color: #FFFFFF;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+}
+@media (max-width: 768px) {
+    .forest {
+        padding: 150px 0px 150px 0px;
+        background: url('../img/forest/IMAGE1.jpg') center (center / cover) no-repeat;
+        &__bcg::after,        
+        &__bcg::before {
+            display: none;
+        }
+    }
+}
+@media (max-width: 660px) {
+    .forest {
+        padding: 50px 0px 50px 0px;
+    }
+}
